@@ -11,7 +11,7 @@ $fecha = date("y-m-d H:i:s");
 $dia = date("d-m-y");
 //mandar horas y minutos por separado para hacer 2 tablas con hora exacta y minutos trabajados
 //$hora = date("H:i:s");
-$hora = date("i");
+$hora = date("H:i:s");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,18 @@ $hora = date("i");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!--    Datatables  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>  
     <title>Pagina principal</title>
+    <style>
+        table.dataTable thead {
+            background: linear-gradient(to right, #0000ff, #0000ff);
+            color:white;
+        }
+    </style>
 </head>
 <body>
     <div class="container-add">
